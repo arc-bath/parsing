@@ -6,7 +6,7 @@ def test_read_ts_coords():
     '''
     expect = 4
 
-    filename = '../data/structs.txt'
+    filename = '../data/ts_coords.txt'
 
     structs = tsp.read_structs(filename)
 
