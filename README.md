@@ -11,9 +11,10 @@ The repository contains exercises based around the classic rainfall problem, to 
 5. The element label should be read into `elements`, a list of list so that each can be accessed with [ <structure_no> ][ <element_no> ] 
 6. The coordinates should be read in `x`, `y`, `z` lists of lists with the same structure as for elements.
 7. The coordinates should be converted to floats.
-8. Your function should count the number of elements in each structure and store these in a list, if any other elements/positions cannot be converted the structure should be marked as invalid.
-9. Your function should count the number of valid and invalid structures.
-10. Finally your function should return:
+8. Your function should check that it is correctly terminated (by `##`) raising an exception error if it doesn't.
+9. Your function should count the number of elements in each structure and store these in a list, if any other elements/positions cannot be converted the structure should be marked as invalid.
+10. Your function should count the number of valid and invalid structures.
+11. Finally your function should return:
     ```python
     return [ valid_structs,
              [ invalid structs, [ list_of_invalid_structs ] ],
