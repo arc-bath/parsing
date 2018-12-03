@@ -28,7 +28,7 @@ def test_read_ts_coords2():
     structs = tsp.read_structs(filename)
 
     for item in structs:
-        assert len(item) == 35
+        assert len(item) == 38
 
     for item in structs[0]:
         for subitem in item:
