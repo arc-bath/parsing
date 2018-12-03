@@ -1,8 +1,8 @@
-# The Rainfall Problem
+# Conditional Parsing 
 
 (C) James Grant (r.j.grant@bath.ac.uk)
 
-The repository contains exercises based around the classic rainfall problem, to design a function `read_structures(filename)` which:
+The repository contains exercises based around parsing datasets in a file, to design a function `read_structs(filename)` which:
 
 1. Reads in and process a data file containing a number of atomic structures
 2. If the line begins with `##` there are no more structures

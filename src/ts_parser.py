@@ -14,5 +14,26 @@ def ts_parser(filename):
 
     Convert x, y, z to floats.
 
-    Later if not ...
+    Part2:
+
+    If line is empty raise execption
+    If element line does not contain three floats store float(nan)
+    If file does not end with ## riase exception
     '''
+
+    all_elements = []
+    all_x = []
+    all_y = []
+    all_z = []
+
+    ## read file
+
+    with open(filename) as file:
+        for line in file:
+            # process file
+
+    return [ all_elements,
+             all_x,
+             all_y,
+             all_z ]
+
