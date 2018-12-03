@@ -1,4 +1,4 @@
-def ts_parser(filename):
+def read_structs(filename):
     '''
     Read structs from IHW/SCP file format:
     
@@ -18,7 +18,7 @@ def ts_parser(filename):
 
     If line is empty raise execption
     If element line does not contain three floats store float(nan)
-    If file does not end with ## riase exception
+    If file does not end with ## raise exception
     '''
 
     all_elements = []
@@ -26,12 +26,9 @@ def ts_parser(filename):
     all_y = []
     all_z = []
 
-    ## read file
+    ## read and process file
 
-    with open(filename) as file:
-        for line in file:
-            # process file
-
+    ## return lists of lists in required order
     return [ all_elements,
              all_x,
              all_y,
