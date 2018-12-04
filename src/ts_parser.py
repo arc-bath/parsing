@@ -34,3 +34,14 @@ def read_structs(filename):
              all_y,
              all_z ]
 
+#def proc_structs( struct ):
+#    '''
+#    Add some documentation:
+#    what is struct?
+#    what is function doing?
+#
+#    return [ num_structs,
+#             [ elements_per_struct ],
+#             [ invalid_structs, [ list_of_invalid_structs ] ] ]
+#    '''
+
