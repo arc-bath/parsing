@@ -13,7 +13,7 @@ def test_proc_ts_coords():
     num_structs = 38
     num_atoms = [ 35, 44, 38, 44, 50, 38, 50, 32, 41, 35, 41, 38, 41, 47, 47, 
                   41, 35, 41, 41, 41, 41, 32, 50, 41, 47, 32, 47, 44, 38, 41,
-                  47, 41, 44, 44, 38, 44, 38 ]
+                  47, 41, 44, 44, 38, 44, 38, 44 ]
 
     assert struct_info[0] == num_structs
     assert struct_info[1] == num_atoms
@@ -22,7 +22,7 @@ def test_proc_struct_a():
     '''
     Test that read_structs(filename) returns a list of 4 lists(of lists)
     '''
-    filename = '../data/test_struct_a.txt'
+    filename = '../data/test_structs_a.txt'
 
     structs = tsp.read_structs(filename)
 
@@ -38,7 +38,7 @@ def test_proc_struct_b():
     '''
     Test that read_structs(filename) returns a list of 4 lists(of lists)
     '''
-    filename = '../data/test_struct_b.txt'
+    filename = '../data/test_structs_b.txt'
 
     structs = tsp.read_structs(filename)
 
@@ -54,7 +54,7 @@ def test_proc_struct_c():
     '''
     Test that read_structs(filename) returns a list of 4 lists(of lists)
     '''
-    filename = '../data/test_struct_c.txt'
+    filename = '../data/test_structs_c.txt'
 
     structs = tsp.read_structs(filename)
 
@@ -70,7 +70,7 @@ def test_proc_struct_d():
     '''
     Test that read_structs(filename) returns a list of 4 lists(of lists)
     '''
-    filename = '../data/test_struct_d.txt'
+    filename = '../data/test_structs_d.txt'
 
     structs = tsp.read_structs(filename)
 
@@ -86,7 +86,7 @@ def test_proc_struct_3():
     '''
     Test that read_structs(filename) returns a list of 4 lists(of lists)
     '''
-    filename = '../data/test_struct_e.txt'
+    filename = '../data/test_structs_e.txt'
 
     structs = tsp.read_structs(filename)
 
