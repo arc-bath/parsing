@@ -46,17 +46,56 @@ def test_read_ts_coords2():
         for subitem in item:
             assert isinstance(subitem, float)
 
-def test_read_list2():
+def test_read_structs_a():
     '''
-    Test that read_structs(filename) returns a list of 4 lists of the expected length
+    Test that read_structs(filename) returns a list of 4 lists:
+    of the expected length
     '''
     expect = 4
 
-    filename = '../data/ts_coords.txt'
+    filename = '../data/test_structs_a.txt'
 
     structs = tsp.read_structs(filename)
 
     assert len(structs) == expect
 
     for item in structs:
-        assert len(item) == 35
+        assert len(item) == 1
+        assert len(item[0]) == 2
+
+def test_read_structs_b():
+    '''
+    Test that read_structs(filename) returns a list of 4 lists:
+    of the expected length
+    '''
+    expect = 4
+
+    filename = '../data/test_structs_b.txt'
+
+    structs = tsp.read_structs(filename)
+
+    assert len(structs) == expect
+
+    for item in structs:
+        assert len(item) == 2
+        assert len(item[0]) == 4
+        assert len(item[1]) == 4
+
+def test_read_structs_c():
+    '''
+    Test that read_structs(filename) returns a list of 4 lists 
+    of the expected length
+    '''
+    expect = 4
+
+    filename = '../data/test_structs_c.txt'
+
+    structs = tsp.read_structs(filename)
+
+    assert len(structs) == expect
+
+    for item in structs:
+        assert len(item) == 3
+        assert len(item[0]) == 2
+        assert len(item[1]) == 4
+        assert len(item[2]) == 6
