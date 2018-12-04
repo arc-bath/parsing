@@ -11,9 +11,9 @@ def test_proc_ts_coords():
     struct_info = tsp.proc_structs(structs)
 
     num_structs = 38
-    num_atoms = []
-    for count in range(38):
-        num_atoms.append(41)
+    num_atoms = [ 35, 45, 39, 45, 51, 39, 51, 33, 42, 36, 42, 39, 42, 48, 48, 
+                  42, 36, 42, 42, 42, 42, 33, 51, 42, 48, 33, 48, 45, 39, 42, 
+                  48, 42, 45, 45, 39, 45, 39 ]
 
     assert struct_info[0] == num_structs
     assert struct_info[1] == num_atoms
