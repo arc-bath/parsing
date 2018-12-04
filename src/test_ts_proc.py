@@ -12,7 +12,7 @@ def test_proc_ts_coords():
 
     num_structs = 38
     num_atoms = []
-    for count in range(39):
+    for count in range(38):
         num_atoms.append(41)
 
     assert struct_info[0] == num_structs
