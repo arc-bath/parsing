@@ -2,7 +2,7 @@ import ts_parser as tsp
 
 def test_proc_ts_coords():
     '''
-    Test that proc_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) counts structs/atoms
     '''
     filename = '../data/ts_coords.txt'
 
@@ -20,7 +20,7 @@ def test_proc_ts_coords():
 
 def test_proc_struct_a():
     '''
-    Test that proc_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) counts structs/atoms
     '''
     filename = '../data/test_structs_a.txt'
 
@@ -36,7 +36,7 @@ def test_proc_struct_a():
 
 def test_proc_struct_b():
     '''
-    Test that proc_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) counts structs/atoms
     '''
     filename = '../data/test_structs_b.txt'
 
@@ -52,7 +52,7 @@ def test_proc_struct_b():
 
 def test_proc_struct_c():
     '''
-    Test that proc_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) counts structs/atoms
     '''
     filename = '../data/test_structs_c.txt'
 
@@ -68,7 +68,7 @@ def test_proc_struct_c():
 
 def test_proc_struct_d():
     '''
-    Test that proc_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) counts structs/atoms
     '''
     filename = '../data/test_structs_d.txt'
 
@@ -84,7 +84,7 @@ def test_proc_struct_d():
 
 def test_proc_struct_e():
     '''
-    Test that proc_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) counts structs/atoms
     '''
     filename = '../data/test_structs_e.txt'
 
@@ -99,9 +99,9 @@ def test_proc_struct_e():
     assert struct_info[1] == num_atoms
 
 
-def test_proc_ts_coords():
+def test_proc_ts_coords2():
     '''
-    Test that read_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) identifies invalids
     '''
     filename = '../data/ts_coords.txt'
 
@@ -115,9 +115,9 @@ def test_proc_ts_coords():
     assert struct_info[2][0] == num_inv
     assert struct_info[2][1] == list_inv
 
-def test_proc_struct_a():
+def test_proc_struct_a2():
     '''
-    Test that read_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) identifies invalids
     '''
     filename = '../data/test_structs_a.txt'
 
@@ -131,9 +131,9 @@ def test_proc_struct_a():
     assert struct_info[2][0] == num_inv
     assert struct_info[2][1] == list_inv
 
-def test_proc_struct_b():
+def test_proc_struct_b2():
     '''
-    Test that read_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) identifies invalids
     '''
     filename = '../data/test_structs_b.txt'
 
@@ -147,9 +147,9 @@ def test_proc_struct_b():
     assert struct_info[2][0] == num_inv
     assert struct_info[2][1] == list_inv
 
-def test_proc_struct_c():
+def test_proc_struct_c2():
     '''
-    Test that read_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) identifies invalids
     '''
     filename = '../data/test_structs_c.txt'
 
@@ -163,9 +163,9 @@ def test_proc_struct_c():
     assert struct_info[2][0] == num_inv
     assert struct_info[2][1] == list_inv
 
-def test_proc_struct_d():
+def test_proc_struct_d2():
     '''
-    Test that read_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) identifies invalids
     '''
     filename = '../data/test_structs_d.txt'
 
@@ -179,9 +179,9 @@ def test_proc_struct_d():
     assert struct_info[2][0] == num_inv
     assert struct_info[2][1] == list_inv
 
-def test_proc_struct_e():
+def test_proc_struct_e2():
     '''
-    Test that read_structs(filename) returns a list of 4 lists(of lists)
+    Test that proc_structs(filename) identifies invalids
     '''
     filename = '../data/test_structs_e.txt'
 
