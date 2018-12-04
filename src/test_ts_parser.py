@@ -167,6 +167,9 @@ def test_read_structs_f():
         structs = tsp.read_structs(filename)
     except Exception as err:
         assert err.args[0] == 'Empty line in file'
+    else:
+        raise Exception('Expected empty line error not raised')
+
 
 def test_read_structs_g():
     '''
@@ -181,5 +184,7 @@ def test_read_structs_g():
         structs = tsp.read_structs(filename)
     except Exception as err:
         assert err.args[0] == 'File termination Error'
+    else:
+        raise Exception('Expected file termination error not raised')
 
  
