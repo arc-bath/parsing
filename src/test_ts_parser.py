@@ -166,7 +166,7 @@ def test_read_structs_f():
     try:
         structs = tsp.read_structs(filename)
     except Exception as err:
-        assert isinstance(type(err), Exception)
+        assert err.args == 'Empty line in file'
 
 def test_read_structs_g():
     '''
@@ -180,6 +180,6 @@ def test_read_structs_g():
     try:
         structs = tsp.read_structs(filename)
     except Exception as err:
-        assert isinstance(type(err), Exception)
+        assert err.args == 'File termination Error'
 
  
