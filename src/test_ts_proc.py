@@ -15,8 +15,8 @@ def test_proc_ts_coords():
     for count in range(39):
         num_atoms.append(41)
 
-    assert struct_info[0] = num_structs
-    assert struct_info[1] = num_atoms
+    assert struct_info[0] == num_structs
+    assert struct_info[1] == num_atoms
 
 def test_proc_struct_a():
     '''
@@ -31,8 +31,8 @@ def test_proc_struct_a():
     num_structs = 1
     num_atoms = [2]
 
-    assert struct_info[0] = num_structs
-    assert struct_info[1] = num_atoms
+    assert struct_info[0] == num_structs
+    assert struct_info[1] == num_atoms
 
 def test_proc_struct_b():
     '''
@@ -47,8 +47,8 @@ def test_proc_struct_b():
     num_structs = 2
     num_atoms = [ 4, 4 ]
 
-    assert struct_info[0] = num_structs
-    assert struct_info[1] = num_atoms
+    assert struct_info[0] == num_structs
+    assert struct_info[1] == num_atoms
 
 def test_proc_struct_c():
     '''
@@ -63,8 +63,8 @@ def test_proc_struct_c():
     num_structs = 3
     num_atoms = [ 2, 4, 6 ]
 
-    assert struct_info[0] = num_structs
-    assert struct_info[1] = num_atoms
+    assert struct_info[0] == num_structs
+    assert struct_info[1] == num_atoms
 
 def test_proc_struct_d():
     '''
@@ -79,8 +79,8 @@ def test_proc_struct_d():
     num_structs = 3
     num_atoms = [ 2, 4, 6 ]
 
-    assert struct_info[0] = num_structs
-    assert struct_info[1] = num_atoms
+    assert struct_info[0] == num_structs
+    assert struct_info[1] == num_atoms
 
 def test_proc_struct_3():
     '''
@@ -95,7 +95,7 @@ def test_proc_struct_3():
     num_structs = 3
     num_atoms = [ 2, 4, 6 ]
 
-    assert struct_info[0] = num_structs
-    assert struct_info[1] = num_atoms
+    assert struct_info[0] == num_structs
+    assert struct_info[1] == num_atoms
 
 
