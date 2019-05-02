@@ -1,5 +1,7 @@
 # Conditional Parsing 
 
+[![Azure Notebooks](https://notebooks.azure.com/launch.png)](https://notebooks.azure.com/import/gh/arc-bath/parsing)
+
 (C) James Grant (r.j.grant@bath.ac.uk)
 
 The repository contains exercises based around parsing datasets in a file, to design a function `read_structs(filename)` which:
